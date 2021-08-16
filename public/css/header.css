@@ -1,0 +1,46 @@
+header{
+    background-color: var(--color-amarillo);
+    padding-bottom: 20px;
+}
+.burger-menu{
+    background-color: var(--color-celeste);
+    color: white;
+    padding: 8px 11px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 50%;
+}
+.lupa{
+    color: black;
+    background-color: var(--gris-claro);
+    padding: 1px;
+    border: solid .1px var(--gris-oscuro);
+    margin-left: 20px;
+    border-radius: 3px;
+}
+.busqueda{
+    margin-bottom: 3px;
+    width: 180px;
+    margin-left: 20px;
+}
+.logo{
+    width:150px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.compra{
+    margin-left: 50px;
+}
+nav ul{
+    list-style-type: none;
+    padding:0px;
+}
+nav ul li{
+    line-height: 13px;
+}
+nav ul li a{
+    font-size: var(--cuerpo);
+    margin-left: 0px;
+    color: black;
+}

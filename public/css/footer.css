@@ -1,0 +1,18 @@
+footer{
+    margin-top: 80px;
+}
+h4{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.desc-footer{
+    text-align: center;
+    margin: 1px 47px 50px;
+}
+.icon-footer{
+    color: var(--color-celeste);
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+

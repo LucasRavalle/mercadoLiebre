@@ -1,0 +1,18 @@
+*{
+    font-family: var(--tipografia);
+    text-decoration: none;
+    list-style: none;
+}
+p{
+    font-size: var(--cuerpo);
+}
+h3{
+    font-size: var(--titulares);
+}
+.precios{
+    font-weight: normal;
+    font-size: var(--precios);
+}
+h6{
+    font-size: var(--descuentos-descripciones);
+}

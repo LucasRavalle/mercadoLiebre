@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/a9202ecaa2.js" crossorigin="anonymous"></script>
     <title>Mercado Liebre</title>
 </head>
 <body>
     <header>
-        <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" width="300">
-        <br><br>
-        <div>Lugar para poner la barra de búsqueda</div>
-        <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+        <input type="search" class="busqueda" placeholder="Buscar productos, marcas">
+        <br>
+        <a class="lupa" href= ><i class="fas fa-search"></i></a>
+        <p class="compra"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
         <nav>
             <ul>
                 <li><a href="htpps://www.mercadoliebre.com/ofertas">Ofertas</a></li>
@@ -23,92 +24,92 @@
             </ul>
        
             <ul>
-                <li><a href="htpps://www.mercadoliebre.com/register">Creá tu cuenta</a></li>
-                <li><a href="htpps://www.mercadoliebre.com/login">Ingresá</a></li>
-                <li><a href="htpps://www.mercadoliebre.com/miscompras">Mis Compras</a></li>
+                <li><a href="htpps://www.mercadoliebre.com/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="htpps://www.mercadoliebre.com/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="htpps://www.mercadoliebre.com/miscompras">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
     <main>
-        <img src="/images/img-home-banner.jpg" width="300">
         <section>
-            <h4>Basado en tu última visita</h4>
+            <h3>Basado en tu última visita</h3>
             <article>
                 <img src="/images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera" width="300">
-                <!--En esta parte inicialmente utilicé una etiqueta <p>, pero el texto quedaba más grande.
-                    Por ello, y para seguir al pie de la letra las dimensiones del mockup de PG, me incliné 
-                    por usar un h6 (por su tamaño). Para quitar la 'negrita' utilicé el atributo style, ya 
-                    que en esta entrega es solo HTML. -->
-                <h6 style="font-weight: normal;">$6.770</h6>
+                <h5 class="precios">$6.770</h6>
                 <h6 style="font-weight: normal;">40% off</h6>
-                <h5>Cafetera Moulinex</h5>
+                <h6>Cafetera Moulinex</h6>
             </article>
             <article>
                 <img src="images/img-macbook-pro-2019.jpg" alt="imagen de MacBook" width="250">
-                <h6 style="font-weight: normal;">$230.000</h6>
+                <h5 class="precios">$230.000</h6>
                 <h6 style="font-weight: normal;">20% off</h6>
-                <h5>MacBook Pro 2019</h5>
+                <h6>MacBook Pro 2019</h6>
             </article>
             <article>
                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen del Samsung Galaxy" width="250">
                 <h6 style="font-weight: normal;">$70.500</h6>
                 <h6 style="font-weight: normal;">10% off</h6>
-                <h5>Samsung Galaxy S10</h5>
+                <h6>Samsung Galaxy S10</h6>
             </article>
             <article>
                 <img src="/images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv" width="250">
-                <h6 style="font-weight: normal;">$23.200</h6>
+                <h5 class="precios">$23.200</h6>
                 <h6 style="font-weight: normal;">5% off</h6>
-                <h5>SmartTv Samsung 43"</h5>
+                <h6>SmartTv Samsung 43"</h6>
             </article>
         </section>
         <section>
             <h3>Ofertas</h3>
             <article>
                 <img src="/images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera" width="300">
-                <h6 style="font-weight: normal;">$6.770</h6>
+                <h5 class="precios">$6.770</h6>
                 <h6 style="font-weight: normal;">40% off</h6>
-                <h5>Cafetera Moulinex</h5>
+                <h6>Cafetera Moulinex</h6>
             </article>
             <article>
                 <img src="images/img-macbook-pro-2019.jpg" alt="imagen de MacBook" width="250">
-                <h6 style="font-weight: normal;">$230.000</h6>
+                <h5 class="precios">$230.000</h6>
                 <h6 style="font-weight: normal;">20% off</h6>
-                <h5>MacBook Pro 2019</h5>
+                <h6>MacBook Pro 2019</h6>
             </article>
             <article>
                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="imagen del Samsung Galaxy" width="250">
-                <h6 style="font-weight: normal;">$70.500</h6>
+                <h5 class="precios">$70.500</h6>
                 <h6 style="font-weight: normal;">10% off</h6>
-                <h5>Samsung Galaxy S10</h5>
+                <h6>Samsung Galaxy S10</h6>
             </article>
             <article>
                 <img src="/images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv" width="250">
-                <h6 style="font-weight: normal;">$23.200</h6>
+                <h5 class="precios">$23.200</h6>
                 <h6 style="font-weight: normal;">5% off</h6>
-                <h5>SmartTv Samsung 43"</h5>
+                <h6>SmartTv Samsung 43"</h6>
             </article>
         </section>
     </main>
     <footer>
         <section>
+            <div class="icon-footer"><i class="fas fa-credit-card"></i></div>
             <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            <p class="desc-footer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                 puntos de pago. ¡Y siempre es seguro!</p>
         </section>
         <section>
+            <div class="icon-footer"><i class="fas fa-gift"></i></div>
             <h4>Envío gratis desde $ 2.500</h4>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            <p class="desc-footer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                 productos. Es un beneficio de Mercado Puntos.</p>
         </section>
         <section>
+            <div class="icon-footer"><i class="fas fa-user-shield"></i></div>
             <h4>Seguridad, de principio a fin</h4>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            <p class="desc-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                 porque estás siempre protegid@.</p>
         </section>
         <section>
-            <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
-            
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>     
         </section>
     </footer>
 </body>
