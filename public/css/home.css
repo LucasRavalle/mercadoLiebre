@@ -15,4 +15,5 @@ h3{
 }
 h6{
     font-size: var(--descuentos-descripciones);
+    font-weight: normal;
 }

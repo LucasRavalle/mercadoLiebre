@@ -2,20 +2,30 @@ header{
     background-color: var(--color-amarillo);
     padding-bottom: 20px;
 }
+header nav ul, header nav input{
+    display: none;
+}
+header nav input{
+    display: none;
+}
+header nav input:checked ~ ul{
+    display: block;
+}
 .burger-menu{
+    text-align: center;
+    margin-top: 25px;
+}
+.burger-menu i{
     background-color: var(--color-celeste);
-    color: white;
-    padding: 8px 11px;
-    display: inline-block;
+    color: var(--blanco);
+    padding: 10px 11px;
     border-radius: 5px;
-    margin-left: 50%;
 }
 .lupa{
-    color: black;
+    color: var(--negro);
     background-color: var(--gris-claro);
     padding: 1px;
     border: solid .1px var(--gris-oscuro);
-    margin-left: 20px;
     border-radius: 3px;
 }
 .busqueda{
@@ -30,11 +40,13 @@ header{
     margin-bottom: 15px;
 }
 .compra{
-    margin-left: 50px;
+    text-align: center;
+    margin-top: 10px;
 }
 nav ul{
     list-style-type: none;
     padding:0px;
+    margin-bottom: 15px;
 }
 nav ul li{
     line-height: 13px;
@@ -42,5 +54,17 @@ nav ul li{
 nav ul li a{
     font-size: var(--cuerpo);
     margin-left: 0px;
-    color: black;
+    color: var(--negro);
+}
+
+/*Tablet y desktop*/
+
+@media (min-width:361px) {
+    header nav label{
+        display: none;
+    }
+    header nav input ~ ul{
+        display: block;
+    }
+   
 }

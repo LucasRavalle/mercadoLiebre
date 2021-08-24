@@ -1,0 +1,55 @@
+main section{
+    width: 90%;
+    margin: 40px auto;
+}
+main section article img{
+    width: 100%;
+}
+main section article{
+    margin-top: 10px;
+}
+.producto{
+    border: var(--gris-claro) 1px solid;
+    padding: 15px;
+    background-color:var(--blanco);
+}
+.producto p{
+    border: solid 1px var(--verde);
+    color: var(--verde);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+.descuento{
+    color: var(--verde);
+}
+.banner{
+    display: none;
+}
+.descripcion{
+    display: none;
+}
+h3{
+    color: var(--gris-oscuro);
+}
+
+
+/*Tablet y desktop*/
+
+@media (min-width:361px){
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descripcion{
+        display: block;
+        color: var(--gris-oscuro);
+    }
+    .banner{
+        display: block; 
+        width: 100%;
+    }
+}
+
