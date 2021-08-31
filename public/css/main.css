@@ -1,30 +1,59 @@
-main section{
+.mainSinFooter{
     width: 90%;
-    margin: 40px auto;
+    margin: 0 auto;
 }
 main section article img{
     width: 100%;
 }
 main section article{
-    margin-top: 10px;
+    background-color: white;
+    margin: 10px 0;
+    
 }
-.producto{
-    border: var(--gris-claro) 1px solid;
+main section article .contenedor{
+    position: relative;
     padding: 15px;
-    background-color:var(--blanco);
+    border-top: 1px solid var(--gris-claro);
+    display: flex;
+    flex-wrap: wrap;
 }
-.producto p{
-    border: solid 1px var(--verde);
+main section article .contenedor h4{
+    display: none;
+    padding-top: 20px;
+}
+main section article .contenedor h6{
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+main section article i{
     color: var(--verde);
-    height: 40px;
-    width: 40px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
     border-radius: 50%;
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
+main section article p{
+    color: var(--verde);
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/* En esta parte utilicé el flex-grow para darle el 30% y 70% respectivamente al precio y descuento, porque utilizando el width + flex-wrap, se superponian los elementos. */
+
 .descuento{
     color: var(--verde);
+    /* width: 70%; */
+    flex-grow: .7;
+}
+.precios{
+    /* width: 30%; */
+    flex-grow: 1;
 }
 .banner{
     display: none;
@@ -35,21 +64,37 @@ main section article{
 h3{
     color: var(--gris-oscuro);
 }
+main section{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
-/*Tablet y desktop*/
+/*Tablet*/
 
 @media (min-width:361px){
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width:45%;
     }
     .descripcion{
         display: block;
         color: var(--gris-oscuro);
     }
     .banner{
-        display: block; 
+        display: block;
         width: 100%;
+    }
+    main section{
+        justify-content: space-between;
+    }
+}
+
+/* Desktop */
+
+@media (min-width:769px) {
+    main section article{
+        width: 22%;
     }
 }
 

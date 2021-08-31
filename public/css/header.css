@@ -1,6 +1,6 @@
 header{
     background-color: var(--color-amarillo);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 header nav ul, header nav input{
     display: none;
@@ -21,27 +21,55 @@ header nav input:checked ~ ul{
     padding: 10px 11px;
     border-radius: 5px;
 }
+.header1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logoYbusqueda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buscador{ 
+    width: 40%;
+    height: 35px;
+    position: relative;
+    top: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
 .lupa{
+    width: 15%;
     color: var(--negro);
-    background-color: var(--gris-claro);
+    background-color: white;
     padding: 1px;
-    border: solid .1px var(--gris-oscuro);
+    border: 1px solid white;
     border-radius: 3px;
 }
+.lupa i{
+    position: relative;
+    top: 5px;
+    color: var(--gris-oscuro);
+}
 .busqueda{
-    margin-bottom: 3px;
-    width: 180px;
-    margin-left: 20px;
+    width: 85%;
+    border: 1px solid white;
 }
 .logo{
-    width:150px;
-    margin-left: 30px;
+    width:40%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
 }
 .compra{
     text-align: center;
-    margin-top: 10px;
+    margin: 10px auto;
 }
 nav ul{
     list-style-type: none;
@@ -66,5 +94,32 @@ nav ul li a{
     header nav input ~ ul{
         display: block;
     }
-   
+    header .logoYbusqueda{
+        width: 60%;
+    }
+    header .compra{
+        width: 30%;
+        position: relative;
+        top: 30px;
+    }
+    header nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    header nav ul li{
+        display: inline-block;
+        margin: 20px 6px 0;
+    }
+    
+    /* Acá le bajo el tamaño de la fuente para que no se rompa y se pase para abajo la parte de login y registro, luego la vuelvo aumentar en version desktop. Podría implementar varias medias queries para que vaya aumentando el tamaño de la fuente porque quedaría bastante desprolijo y quiero ver si hay una mejor solución. */
+
+    header nav ul li a{
+        font-size: 8px;
+    }
+}
+@media (min-width:769px) {
+    header nav ul li a{
+        font-size: 12px;
+    }
 }
