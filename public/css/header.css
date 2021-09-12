@@ -29,6 +29,7 @@ header nav input:checked ~ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 .buscador{ 
     width: 40%;
@@ -85,7 +86,7 @@ nav ul li a{
     color: var(--negro);
 }
 
-/*Tablet y desktop*/
+/*Tabletm y desktop*/
 
 @media (min-width:361px) {
     header nav label{
@@ -110,16 +111,5 @@ nav ul li a{
     header nav ul li{
         display: inline-block;
         margin: 20px 6px 0;
-    }
-    
-    /* Acá le bajo el tamaño de la fuente para que no se rompa y se pase para abajo la parte de login y registro, luego la vuelvo aumentar en version desktop. Podría implementar varias medias queries para que vaya aumentando el tamaño de la fuente porque quedaría bastante desprolijo y quiero ver si hay una mejor solución. */
-
-    header nav ul li a{
-        font-size: 8px;
-    }
-}
-@media (min-width:769px) {
-    header nav ul li a{
-        font-size: 12px;
     }
 }

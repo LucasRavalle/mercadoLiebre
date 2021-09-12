@@ -1,0 +1,25 @@
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 30px auto;
+}
+.login form input{
+    margin:10px 0 ;
+    padding: 10px;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+.login form label{
+    font-weight: bold;
+}
+.login form a input{
+    background-color: var(--color-celeste);
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin:10px 0 ;
+    padding: 10px;
+    border: 1px white solid;
+    border-radius: 10px;
+}
