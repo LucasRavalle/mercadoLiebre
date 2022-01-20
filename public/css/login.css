@@ -23,3 +23,7 @@
     border: 1px white solid;
     border-radius: 10px;
 }
+
+.login .submit:hover{
+    background-color: #0022AA;
+}

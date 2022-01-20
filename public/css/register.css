@@ -69,3 +69,6 @@ span{
     font-weight: lighter;
     margin: -5px 0 25px;
 }
+.register .submit:hover{
+    background-color: #0022AA;
+}

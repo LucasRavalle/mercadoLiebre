@@ -18,3 +18,21 @@ h4{
     margin-bottom: 10px;
 }
 
+/*Desktop*/
+
+@media (min-width:769px) {
+    footer .data{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    footer .data section{
+        width: 30%;
+    }
+
+    footer .data section .icon-footer:hover{
+        color: var(--color-azul);
+    }
+}
